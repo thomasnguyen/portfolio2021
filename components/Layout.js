@@ -1,7 +1,11 @@
 import Head from "next/head";
 import styled from "styled-components";
+import { withRouter } from "next/router";
+import Link from "next/link";
 
 import Header from "./Header";
+import Hero from "./Hero";
+import Footer from "./Footer";
 
 const Section = styled.section`
   width: 100%;
@@ -10,20 +14,20 @@ const Section = styled.section`
   margin-right: auto;
   padding-left: 32px;
   padding-right: 32px;
-  position: sticky;
-  top: 0px;
   z-index: 2;
-
+  box-sizing: border-box;
   font-size: 12px;
   font-family: "Inter", sans-serif;
+  margin-bottom: 50px;
 `;
 
-export default function Layout({ children, pageTitle, ...props }) {
+function Layout({ children, pageTitle, router, ...props }) {
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{pageTitle}</title>
+        <link rel="icon" href="/ac_avatar.png"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300,500,600&display=swap"
@@ -32,10 +36,12 @@ export default function Layout({ children, pageTitle, ...props }) {
       </Head>
       <Section>
         <Header />
-        <Header />
         <div className="content">{children}</div>
       </Section>
-      <footer>Built by me!</footer>
+
+      <Footer />
     </>
   );
 }
+
+export default withRouter(Layout);

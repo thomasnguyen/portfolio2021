@@ -1,24 +1,64 @@
 import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+import styled from "styled-components";
 
 import Layout from "@components/Layout";
+
+export const Article = styled.article`
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 100px;
+
+  line-height: 1.6;
+  font-size: 18px;
+  box-sizing: border-box;
+
+  .post-content {
+  }
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 32px;
+    color: #292929;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
 
   return (
     <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-      <Link href="/">
-        <a>Back to post list</a>
-      </Link>
-      <article>
+      <Article>
         <h1>{frontmatter.title}</h1>
-        <p>By {frontmatter.author}</p>
-        <div>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1519827226394-4f4903100cbc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+            loading="lazy"
+            alt=""
+            width="100%"
+          />
+        </figure>
+        <div className="post-content">
           <ReactMarkdown source={markdownBody} />
         </div>
-      </article>
+      </Article>
     </Layout>
   );
 }

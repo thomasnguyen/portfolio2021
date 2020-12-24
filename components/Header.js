@@ -26,21 +26,8 @@ const Logo = styled.div`
   align-items: center;
 `;
 
-const Avatar2 = styled.img`
-  width: 7em;
-  height: 7em;
-  background: pink;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 1.5em 0 0;
-  border-radius: 50%;
-  background-image: url("/ac_avatar.png");
-  background-position: center;
-  background-size: 7em 7em;
-`;
-
 const Avatar = styled.img`
+  cursor: pointer;
   width: 5em;
   height: 5em;
   margin: 0 1.5em 0 0;
@@ -51,7 +38,7 @@ const LogoText = styled.div`
   h1 {
     font-size: 1.8em;
     font-weight: 500;
-    margin: 0.1em 0;
+    margin: 0.2em 0;
   }
   h2 {
     font-size: 1.2em;
@@ -84,7 +71,7 @@ const L = styled.div`
   font-weight: 600;
   cursor: pointer;
   margin-left: 1.5em;
-  font-size: 1.1em;
+  font-size: 1.2em;
   opacity: 0.9;
   &:hover {
     color: #688624;
@@ -97,20 +84,22 @@ export default function Header() {
     <>
       <HeaderContainer>
         <Logo>
-          <Avatar src="/ac_avatar.png" />
+          <Link href="/">
+            <Avatar src="/ac_avatar.png" />
+          </Link>
           <LogoText>
             <h1>Thomas Nguyen</h1>
             <h2>Engineering a better humanity.</h2>
           </LogoText>
         </Logo>
-        <Nav>
+        {/*  <Nav>
           <Link href="/">
             <L>Home</L>
           </Link>
           <Link href="/blog">
             <L>Blog</L>
           </Link>
-        </Nav>
+        </Nav> */}
       </HeaderContainer>
     </>
   );
