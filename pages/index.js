@@ -1,6 +1,6 @@
 import matter from "gray-matter";
-import Layout from "../components/Layout";
-import PostList from "../components/PostList";
+import Layout from "@components/Layout";
+import PostList from "@components/PostList";
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
