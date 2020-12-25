@@ -13,9 +13,9 @@ With that being said, I want to attempt this endeavor again. But this time, aimi
 
 ### 💪 This year will be different
 
-The hardest part of starting a habit is getting started. Looking back at the years, there was simply too much friction with starting a blog post.
+The hardest part of starting any habit is getting started. Looking back at the years, there was simply too much friction with starting a blog post. This includes the writing process as well as putting it together visually.
 
-Now as smarter engineer, I’m able to automate tasks that would normally have taken me hours.
+Now as a more capable engineer, I’m able to automate tasks that would normally have taken me hours.
 
 Additionally, I’m going to spend less time on technical writing. My interests goes beyond coding and I have desires to write about them.
 
