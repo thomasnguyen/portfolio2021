@@ -43,6 +43,7 @@ export const Article = styled.article`
     text-decoration: none;
     font-weight: 600;
     color: black;
+    text-decoration: underline;
 
     &:hover {
       color: #688624;
