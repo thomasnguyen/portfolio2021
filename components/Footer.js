@@ -25,6 +25,11 @@ export const Container = styled.footer`
   p {
     color: #999;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 20px;
+  }
 `;
 
 function Footer() {

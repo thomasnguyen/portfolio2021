@@ -5,7 +5,7 @@ author: "Thomas Nguyen"
 
 🙌, My name is Thomas Nguyen. I’m a software developer based in the Bay Area.
 
-Every year, I aspire to write out my thoughts in my blog **but** every-time the results are the same. I spend a great 1-2 weeks building the blogging platform and then by the end of January, I drop the writing. The blogging project is abandoned
+Every year, I aspire to write out my thoughts in a blog **but** every-time the results are the same. I spend a great 1-2 weeks building the blogging platform and then by the end of January, I drop the writing. The blogging project is abandoned
 
 The truth is, blogging is _hard, very hard_. Expressing technical thoughts is one of the most difficult skills to master as an engineer. On top of that, writing takes time, **a lot** of time.
 
