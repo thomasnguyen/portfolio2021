@@ -2,14 +2,13 @@ import matter from "gray-matter";
 import Layout from "@components/Layout";
 import PostList from "@components/PostList";
 import Hero from "@components/Hero";
+import Projects from "@components/Projects";
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title}>
       <Hero />
-      <main>
-        <PostList posts={posts} />
-      </main>
+      <Projects />
     </Layout>
   );
 };
