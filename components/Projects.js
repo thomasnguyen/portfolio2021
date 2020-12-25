@@ -27,7 +27,7 @@ const ProjectPreviewContainer = styled.div`
 `;
 
 const ProjectPreview = styled.div`
-  background-image: url("https://thomasnguyen.org/static/media/bookfriend.3665b7eb.png");
+  background-image: url("https://user-images.githubusercontent.com/14298038/103112895-e9bd9600-460c-11eb-93ab-ed02f7a64d2a.png");
   background-repeat: repeat-y;
   background-position: center;
   background-size: 960px 688px;

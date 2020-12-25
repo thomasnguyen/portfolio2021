@@ -35,6 +35,20 @@ export const Article = styled.article`
     color: #292929;
   }
 
+  img {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+
+    &:hover {
+      color: #688624;
+    }
+  }
+
   @media (max-width: 768px) {
     width: 100%;
   }

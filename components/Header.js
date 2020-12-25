@@ -92,14 +92,14 @@ export default function Header() {
             <h2>Engineering a better humanity.</h2>
           </LogoText>
         </Logo>
-        {/*  <Nav>
+        <Nav>
           <Link href="/">
             <L>Home</L>
           </Link>
-          <Link href="/blog">
+          {/*           <Link href="/blog">
             <L>Blog</L>
-          </Link>
-        </Nav> */}
+          </Link> */}
+        </Nav>
       </HeaderContainer>
     </>
   );
