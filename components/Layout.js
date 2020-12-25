@@ -30,7 +30,7 @@ function Layout({ children, pageTitle, router, ...props }) {
         <link rel="icon" href="/ac_avatar.png"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300,400,500,600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
       </Head>
