@@ -9,7 +9,7 @@ import { SnowFlakes } from "./snowflakes";
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <>
-      <SnowFlakes className="snowflakes" aria-hidden="true">
+      <SnowFlakes className="snowflakes test" aria-hidden="true">
         <div className="snowflake">❅</div>
         <div className="snowflake">❆</div>
         <div className="snowflake">❅</div>
