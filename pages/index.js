@@ -4,14 +4,32 @@ import PostList from "@components/PostList";
 import Hero from "@components/Hero";
 import Projects from "@components/Projects";
 import Resume from "@components/Resume";
+import { SnowFlakes } from "./snowflakes";
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
-    <Layout pageTitle={title}>
-      <Hero />
-      <Projects />
-      <Resume />
-    </Layout>
+    <>
+      <SnowFlakes className="snowflakes" aria-hidden="true">
+        <div className="snowflake">❅</div>
+        <div className="snowflake">❆</div>
+        <div className="snowflake">❅</div>
+        <div className="snowflake">❆</div>
+        <div className="snowflake">❅</div>
+        <div className="snowflake">❆</div>
+        <div className="snowflake">❅</div>
+        <div className="snowflake">❆</div>
+        <div className="snowflake">❅</div>
+        <div className="snowflake">❆</div>
+        <div className="snowflake">❅</div>
+        <div className="snowflake">❆</div>
+      </SnowFlakes>
+
+      <Layout pageTitle={title}>
+        <Hero />
+        <Projects />
+        <Resume />
+      </Layout>
+    </>
   );
 };
 
