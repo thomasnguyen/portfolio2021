@@ -3,12 +3,14 @@ import Layout from "@components/Layout";
 import PostList from "@components/PostList";
 import Hero from "@components/Hero";
 import Projects from "@components/Projects";
+import Resume from "@components/Resume";
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title}>
       <Hero />
       <Projects />
+      <Resume />
     </Layout>
   );
 };

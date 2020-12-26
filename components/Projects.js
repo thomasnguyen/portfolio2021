@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import styled from "styled-components";
 
 export const ProjectsHeadline = styled.div`
@@ -75,33 +74,30 @@ const ProjectControls = styled.div`
   justify-content: space-between;
 `;
 
-class Projects extends Component {
-  render() {
-    return (
-      <>
-        <ProjectsHeadline>SIDE PROJECTS</ProjectsHeadline>
-        <ProjectItem key={1}>
-          <ProjectHeader>BookFriends</ProjectHeader>
-          <ProjectSubtitle>
-            BookFriends enables readers to track their reading, set goals and
-            catalog book libraries for friends.
-          </ProjectSubtitle>
-          <ProjectPreviewContainer>
-            <ProjectPreview></ProjectPreview>
-          </ProjectPreviewContainer>
-          <p>
-            As an avid book reader, I was amazed to find out there wasn't a
-            decent reading log app. So that's when I started to flirt with the
-            idea of building my own. The idea was simple, a reading tracker that
-            will allow me to interact with my friends. It also became an
-            opportunity to grow as an multidisciplinary engineer to build from
-            idea to launch.
-          </p>
-          <ProjectControls></ProjectControls>
-        </ProjectItem>
-      </>
-    );
-  }
-}
+const Projects = () => {
+  return (
+    <>
+      <ProjectsHeadline>SIDE PROJECTS</ProjectsHeadline>
+      <ProjectItem key={1}>
+        <ProjectHeader>BookFriends</ProjectHeader>
+        <ProjectSubtitle>
+          BookFriends enables readers to track their reading, set goals and
+          catalog book libraries for friends.
+        </ProjectSubtitle>
+        <ProjectPreviewContainer>
+          <ProjectPreview></ProjectPreview>
+        </ProjectPreviewContainer>
+        <p>
+          As an avid book reader, I was amazed to find out there wasn't a decent
+          reading log app. So that's when I started to flirt with the idea of
+          building my own. The idea was simple, a reading tracker that will
+          allow me to interact with my friends. It also became an opportunity to
+          grow as an multidisciplinary engineer to build from idea to launch.
+        </p>
+        <ProjectControls></ProjectControls>
+      </ProjectItem>
+    </>
+  );
+};
 
 export default Projects;
