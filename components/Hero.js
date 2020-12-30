@@ -3,25 +3,34 @@ import styled from "styled-components";
 const HeroContainer = styled.div`
   max-width: 800px;
   margin: auto;
+  color: white;
+
   h2 {
     margin-bottom: 25px;
     font-size: 2.8em;
     line-height: 1.5s;
-    font-weight: 300;
+    font-weight: 200;
     text-transform: none;
+
     strong {
-      font-weight: 400;
+      font-weight: 500;
     }
   }
   p {
     font-size: 1.3em;
-    color: gray;
+    font-weight: 300;
+    color: #a7a7a7;
   }
   a {
-    color: black;
+    color: #ffffffcc;
+    font-weight: 500;
     text-decoration: none;
-    border-bottom: 1px dashed gray;
+    border-bottom: 1px dashed #ffffffcc;
     font-weight: 600;
+  }
+
+  a:hover {
+    color: white;
   }
   margin-top: 75px;
   margin-bottom: 100px;

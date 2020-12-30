@@ -2,17 +2,18 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
-  margin: 3em 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 3em 0;
   font-size: 1em;
+  color: ${(props) => (props?.darkMode ? "white" : "black")};
+
   @media (max-width: 768px) {
-    margin: 2.5em 0 0 0;
-    padding: 0 3em;
+    padding: 2.5em 3em;
     justify-content: space-around;
     & > :first-child {
       margin-bottom: 1.5em;
@@ -32,6 +33,13 @@ const Avatar = styled.img`
   height: 5em;
   margin: 0 1.5em 0 0;
   border-radius: 50%;
+  transition: transform 0.2s; /* Animation */
+
+  &:hover {
+    transform: scale(
+      1.2
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 `;
 
 const LogoText = styled.div`
@@ -45,6 +53,7 @@ const LogoText = styled.div`
     font-weight: 300;
     margin: 0;
     padding: 0 0 0 0.2em;
+    opacity: 0.7;
   }
 `;
 
@@ -74,15 +83,14 @@ const L = styled.div`
   font-size: 1.2em;
   opacity: 0.9;
   &:hover {
-    color: #688624;
     text-decoration: underline dotted;
   }
 `;
 
-export default function Header() {
+export default function Header({ darkMode, ...props }) {
   return (
     <>
-      <HeaderContainer>
+      <HeaderContainer darkMode={darkMode}>
         <Logo>
           <Link href="/">
             <Avatar src="/ac_avatar.png" />

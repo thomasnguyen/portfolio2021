@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsHeadline = styled.div`
-  color: #688624;
+  color: ${(props) => (props?.darkMode ? "#a7a7a7" : "#688624")};
   font-size: 1.1em;
   letter-spacing: 2px;
   font-weight: 500;
@@ -26,7 +26,7 @@ const ProjectPreviewContainer = styled.div`
 `;
 
 const ProjectPreview = styled.div`
-  background-image: url("https://user-images.githubusercontent.com/14298038/103112895-e9bd9600-460c-11eb-93ab-ed02f7a64d2a.png");
+  background-image: url("https://user-images.githubusercontent.com/14298038/103310503-9cef0c00-49cc-11eb-9d11-8c6386f67032.png");
   background-repeat: repeat-y;
   background-position: center;
   background-size: 960px 688px;
@@ -50,12 +50,14 @@ const ProjectHeader = styled.div`
   font-size: 2em;
   font-weight: 500;
   margin: 0 0 0.2em 0;
+  color: ${(props) => (props?.darkMode ? "white" : "black")};
 `;
 
 const ProjectSubtitle = styled.div`
   font-size: 1.3em;
-  color: #565656;
   line-height: 1.5;
+  color: ${(props) => (props?.darkMode ? "white" : "black")};
+  opacity: 0.7;
 `;
 
 const ProjectItem = styled.div`
@@ -74,13 +76,13 @@ const ProjectControls = styled.div`
   justify-content: space-between;
 `;
 
-const Projects = () => {
+const Projects = ({ darkMode, ...props }) => {
   return (
     <>
-      <ProjectsHeadline>SIDE PROJECTS</ProjectsHeadline>
+      <ProjectsHeadline darkMode={darkMode}>SIDE PROJECTS</ProjectsHeadline>
       <ProjectItem key={1}>
-        <ProjectHeader>BookFriends</ProjectHeader>
-        <ProjectSubtitle>
+        <ProjectHeader darkMode={darkMode}>BookFriends</ProjectHeader>
+        <ProjectSubtitle darkMode={darkMode}>
           BookFriends enables readers to track their reading, set goals and
           catalog book libraries for friends.
         </ProjectSubtitle>
