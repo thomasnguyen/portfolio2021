@@ -66,7 +66,7 @@ Oh no!, your page is now rendered as like this. What happened? Well the initial 
 
 A possible solution to this is calculating the initial width with the `calc` function but unless you’re heavily using CSS variables, it just adds more overhead when we need to change those padding values.
 
-Just slapping in the border-box property value fixes things and makes it more maintainble.
+Just slapping in the border-box property value fixes things and makes it more maintainable.
 
 Ok:
 
