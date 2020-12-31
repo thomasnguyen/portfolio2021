@@ -1,11 +1,9 @@
 ---
 title: "Box-sizing: Fix this annoying issue"
 tags: ["css"]
-dateCreated: null
+dateCreated: 1609372800
 dateModified: null
 ---
-
-# Box-Sizing
 
 Padding messing up with your layout? It can be because of confusing browser default styling with box-sizing.
 
@@ -104,7 +102,7 @@ html {
 
 If I need to switch back to `content-box`, I simply just override the element with that styling. Simple and less headaches.
 
-## Conclusion
+# Conclusion
 
 Yep! That's all folks and if you want to see the final code check the codepen below.
 

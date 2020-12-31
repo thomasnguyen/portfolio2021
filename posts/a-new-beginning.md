@@ -1,6 +1,8 @@
 ---
 title: "A new beginning, again!"
 author: "Thomas Nguyen"
+dateCreated: 1609372800
+dateModified: null
 ---
 
 🙌, My name is Thomas Nguyen. I’m a software developer based in the Bay Area.
@@ -11,7 +13,7 @@ The truth is, blogging is _hard, very hard_. Expressing technical thoughts is on
 
 With that being said, I want to attempt this endeavor again. But this time, aiming at a different angle and with a new sense of discipline.
 
-### 💪 This year will be different
+## 💪 This year will be different
 
 The hardest part of starting any habit is getting started. Looking back at the years, there was simply too much friction with starting a blog post. This includes the writing process as well as putting it together visually.
 
@@ -21,6 +23,6 @@ Additionally, I’m going to spend less time on technical writing. My interests 
 
 Such as Bumi, [my puppy Corgi.](https://user-images.githubusercontent.com/14298038/103112874-d5799900-460c-11eb-9f5f-7a030244069f.jpg) ♥️
 
-### Enjoy
+## Enjoy
 
 I hope you guys enjoy reading these writing as much as it does for me to create them. 2021 will be a great year I promise.
