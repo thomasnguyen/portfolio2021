@@ -1,6 +1,6 @@
 ---
 title: "Jumpstart your career"
-tags: ["career"]
+tags: ["TECH", "career"]
 dateCreated: 1609372800
 dateModified: null
 ---

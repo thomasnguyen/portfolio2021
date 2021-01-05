@@ -1,6 +1,6 @@
 ---
 title: "Box-sizing: Fix this annoying issue"
-tags: ["css"]
+tags: ["TECH", "css"]
 dateCreated: 1609372800
 dateModified: null
 ---

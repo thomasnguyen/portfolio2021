@@ -1,6 +1,6 @@
 ---
 title: "A new beginning, again!"
-author: "Thomas Nguyen"
+tags: ["PERSONAL", "blog"]
 dateCreated: 1609372800
 dateModified: null
 ---
