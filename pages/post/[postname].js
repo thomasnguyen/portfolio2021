@@ -60,6 +60,7 @@ export const Article = styled.article`
     padding-bottom: 5px;
     font-size: 24px;
     border-bottom: 4px solid #ededed;
+    color: #343a3f;
   }
 
   p {
@@ -101,14 +102,6 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           <h4>{dateCreatedString}</h4>
         </div>
 
-        <figure>
-          <img
-            src="https://images.unsplash.com/photo-1519827226394-4f4903100cbc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
-            loading="lazy"
-            alt=""
-            width="100%"
-          />
-        </figure>
         <div className="post-content">
           <ReactMarkdown
             source={markdownBody}

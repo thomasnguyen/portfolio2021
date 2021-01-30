@@ -1,9 +1,11 @@
 ---
-title: "Box-sizing: Fix this annoying issue"
+title: "Box-sizing: Code Layouts Intuitively"
 tags: ["TECH", "css"]
-dateCreated: 1609372800
+dateCreated: 1612029246
 dateModified: null
 ---
+
+![Box Model CSS](https://upload.wikimedia.org/wikipedia/commons/7/7a/Boxmodell-detail.png)
 
 Padding messing up with your layout? It can be because of confusing browser default styling with box-sizing.
 
