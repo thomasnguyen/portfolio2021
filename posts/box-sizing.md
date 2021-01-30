@@ -5,7 +5,7 @@ dateCreated: 1612029246
 dateModified: null
 ---
 
-![Box Model CSS](https://upload.wikimedia.org/wikipedia/commons/7/7a/Boxmodell-detail.png)
+![Box Model CSS](https://user-images.githubusercontent.com/14298038/106364246-82b59000-62e2-11eb-97bb-f9b42955ea7a.png)
 
 Padding messing up with your layout? It can be because of confusing browser default styling with box-sizing.
 
