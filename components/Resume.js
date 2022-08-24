@@ -3,8 +3,11 @@ import { ProjectsHeadline } from "./Projects";
 import moment from "moment";
 
 const Container = styled.section`
-  margin: 10rem 0;
+  margin: auto;
   margin-top: 15rem;
+
+  width: 100%;
+  max-width: 1250px;
 `;
 
 const ResumeContainer = styled.div`

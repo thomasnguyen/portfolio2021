@@ -9,7 +9,6 @@ import Footer from "./Footer";
 
 const Section = styled.section`
   width: 100%;
-  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 32px;

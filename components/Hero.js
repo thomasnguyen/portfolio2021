@@ -5,7 +5,10 @@ const HeroContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: auto;
   margin-top: 5em;
+  width: 100%;
+  max-width: 1250px;
 
   .hero-text {
     max-width: 480px;
