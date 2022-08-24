@@ -10,7 +10,11 @@ const HeaderContainer = styled.div`
   align-items: center;
   padding: 3em 0;
   font-size: 1em;
-  color: ${(props) => (props?.darkMode ? "white" : "black")};
+  color: #151e2c;
+
+  .primary-color {
+    color: #0252cd;
+  }
 
   @media (max-width: 768px) {
     padding: 2.5em 3em;
@@ -25,13 +29,14 @@ const Logo = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 `;
 
 const Avatar = styled.img`
   cursor: pointer;
   width: 5em;
   height: 5em;
-  margin: 0 1.5em 0 0;
+  margin: 0 1em 0 0;
   border-radius: 50%;
   transition: transform 0.2s; /* Animation */
 
@@ -44,8 +49,8 @@ const Avatar = styled.img`
 
 const LogoText = styled.div`
   h1 {
-    font-size: 1.8em;
-    font-weight: 500;
+    font-size: 1.3em;
+    font-weight: 600;
     margin: 0.2em 0;
   }
   h2 {
@@ -91,18 +96,19 @@ export default function Header({ darkMode, ...props }) {
   return (
     <>
       <HeaderContainer darkMode={darkMode}>
-        <Logo>
-          <Link href="/">
-            <Avatar src="/ac_avatar.png" />
-          </Link>
-          <LogoText>
-            <h1>Thomas Nguyen</h1>
-            <h2>Engineering a better humanity.</h2>
-          </LogoText>
-        </Logo>
+        <Link href="/">
+          <Logo>
+            <Avatar src="/logo.png" />
+            <LogoText>
+              <h1>Thomas Nguyen</h1>
+            </LogoText>
+          </Logo>
+        </Link>
         <Nav>
           <Link href="/">
-            <L>Home</L>
+            <L>
+              <span className="primary-color">01</span> Home
+            </L>
           </Link>
           {/*           <Link href="/blog">
             <L>Blog</L>

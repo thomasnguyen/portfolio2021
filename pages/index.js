@@ -54,13 +54,10 @@ const Overlay = styled.div`
 const Bg = styled.div`
   width: 100%;
   height: 594px;
-  background-color: black;
-  background: url("https://images.unsplash.com/photo-1608395609438-f304ee3b0d07?ixid=MXwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&dpr=1&auto=format%2Ccompress&fit=crop&w=899&h=594%201x&q=10,%20https://images.unsplash.com/photo-1608395609438-f304ee3b0d07?ixid=MXwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&dpr=2&auto=format%2Ccompress&fit=crop&w=1199&h=594%202x&q=10");
-  background-position: center;
-  background-size: cover;
+  background: white;
   position: absolute;
-  z-index: -2;
-  filter: blur(1px);
+  z-index: -1;
+  background: linear-gradient(90deg, white 67%, #f7f7f7 33%);
 `;
 
 const Index = ({ posts, title, description, ...props }) => {

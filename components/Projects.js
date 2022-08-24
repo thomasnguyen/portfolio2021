@@ -77,6 +77,7 @@ const ProjectControls = styled.div`
 `;
 
 const Projects = ({ darkMode, ...props }) => {
+  return <></>;
   return (
     <>
       <ProjectsHeadline darkMode={darkMode}>SIDE PROJECTS</ProjectsHeadline>

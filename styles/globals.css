@@ -26,3 +26,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.primary-color {
+  background-color: #0252CD;
+}

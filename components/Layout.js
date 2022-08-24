@@ -28,7 +28,7 @@ function Layout({ children, pageTitle, darkMode, router, ...props }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{pageTitle}</title>
-        <link rel="icon" href="/ac_avatar.png"></link>
+        <link rel="icon" href="/logo.png"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap"

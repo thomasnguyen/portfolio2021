@@ -1,63 +1,63 @@
 import styled from "styled-components";
 
 const HeroContainer = styled.div`
-  max-width: 800px;
-  margin: auto;
-  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5em;
+  margin-bottom: 5em;
 
-  h2 {
-    margin-bottom: 25px;
-    font-size: 2.8em;
-    line-height: 1.5s;
-    font-weight: 200;
-    text-transform: none;
+  .hero-text {
+    max-width: 480px;
+  }
 
-    strong {
-      font-weight: 500;
-    }
+  .hero__pretitle {
+    color: #0252cd;
+    font-size: 1.2em;
+    margin: 0;
   }
-  p {
-    font-size: 1.3em;
-    font-weight: 300;
-    color: #a7a7a7;
-  }
-  a {
-    color: #ffffffcc;
-    font-weight: 500;
-    text-decoration: none;
-    border-bottom: 1px dashed #ffffffcc;
+
+  .hero__title {
+    color: #0252cd;
+    font-size: 4em;
     font-weight: 600;
+    color: #151e2c;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
-  a:hover {
-    color: white;
+  p {
+    color: #4f5c71;
+    font-size: 1.5em;
+    margin: 0;
+    line-height: 1.5;
   }
-  margin-top: 75px;
-  margin-bottom: 100px;
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 30px;
-    }
-    padding: 20px;
-    margin: auto;
+
+  .hero-image {
+    margin-right: -100px;
+    filter: sharp(2);
   }
 `;
 
 export default function Hero() {
   return (
     <HeroContainer>
-      <h2>
-        👋&nbsp; I enjoy building
-        <strong> beautiful software </strong>to solve real-world problems.
-      </h2>
-
-      <p>
-        Currently engineering <a href="https://www.suki.ai/">@suki.ai</a> to
-        help battle&nbsp;
-        <a href="https://www.forbes.com/sites/robertpearl/2019/07/08/physician-burnout-1/#45def0fd119e">
-          physician burnout
-        </a>
-      </p>
+      <div className="hero-text">
+        <div className="hero__pretitle">SOFTWARE ENGINEER - MENTOR</div>
+        <h2 className="hero__title">
+          Hello! I’m 👋 <div>Thomas Nguyen</div>
+        </h2>
+        <p>
+          Currently, I'm a <strong>frontend engineer</strong> at
+          <strong> Amazon</strong> empowering organizations to make better
+          data-driven decisions. I also help engineers take their career to the
+          next level.
+        </p>
+      </div>
+      <div>
+        <img className="hero-image" src="/hero.png" />
+      </div>
     </HeroContainer>
   );
 }
