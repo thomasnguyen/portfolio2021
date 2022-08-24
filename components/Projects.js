@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsHeadline = styled.div`
-  color: ${(props) => (props?.darkMode ? "#a7a7a7" : "#688624")};
+  color: ${(props) => (props?.darkMode ? "#a7a7a7" : "#0252cd")};
   font-size: 1.1em;
   letter-spacing: 2px;
   font-weight: 500;

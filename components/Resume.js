@@ -4,6 +4,7 @@ import moment from "moment";
 
 const Container = styled.section`
   margin: 10rem 0;
+  margin-top: 15rem;
 `;
 
 const ResumeContainer = styled.div`
