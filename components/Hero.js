@@ -36,6 +36,11 @@ const HeroContainer = styled.div`
   .hero-image {
     margin-right: -100px;
     filter: sharp(2);
+
+    @media (max-width: 768px) {
+      margin-right: 0px;
+      width: 100%;
+    }
   }
 
   .underline {

@@ -6,7 +6,7 @@ export const Container = styled.footer`
   color: white;
   display: flex;
   justify-content: space-around;
-
+  box-sizing: border-box;
   .invisible-container {
     width: 1110px;
     padding: 20px 0;
