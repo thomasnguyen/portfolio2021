@@ -6,22 +6,20 @@ const HeaderContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 3em 0;
   font-size: 1em;
   color: #151e2c;
+  width: 1250px;
+  margin: auto;
 
   .primary-color {
     color: #0252cd;
   }
 
   @media (max-width: 768px) {
-    padding: 2.5em 3em;
-    justify-content: space-around;
-    & > :first-child {
-      margin-bottom: 1.5em;
-    }
+    width: 100%;
   }
 `;
 

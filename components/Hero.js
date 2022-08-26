@@ -3,7 +3,6 @@ import styled from "styled-components";
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   margin: auto;
   margin-top: 5em;
@@ -12,6 +11,11 @@ const HeroContainer = styled.div`
 
   .hero-text {
     max-width: 480px;
+    padding-top: 5em;
+
+    @media (max-width: 768px) {
+      padding-top: 0;
+    }
   }
 
   .hero__pretitle {
