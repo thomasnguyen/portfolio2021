@@ -50,6 +50,15 @@ const HeroContainer = styled.div`
     }
   }
 
+  .hero-image__gradient {
+    background: linear-gradient(90deg, #ecc45c 2.34%, #ff6543 100.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
   .underline {
     position: relative;
     ::after,
@@ -81,7 +90,8 @@ export default function Hero() {
       <div className="hero-text">
         <div className="hero__pretitle">SOFTWARE ENGINEER - MENTOR</div>
         <h2 className="hero__title">
-          Hello! I’m 👋 <div className="underline">Thomas Nguyen</div>
+          Hello! I’m 👋{" "}
+          <div className="hero-image__gradient">Thomas Nguyen</div>
         </h2>
         <p>
           Currently, I'm a <strong>frontend engineer</strong> at
