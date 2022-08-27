@@ -93,6 +93,33 @@ const getDateEmployed = (startDate, endDate) => {
 
 const resume = [
   {
+    companyName: "Amazon AWS",
+    companyURL: "https://www.amazon.com/",
+    skills: [{ name: "reactjs", color: "blue" }],
+    location: "New York, NY",
+    position: "Front-end Engineer",
+    points: [],
+    workedLength: getDateEmployed(new Date("2022-08-01"), null),
+  },
+  {
+    companyName: "Cedar",
+    companyURL: "https://www.cedar.com/",
+    skills: [
+      { name: "reactjs", color: "blue" },
+      { name: "django", color: "green" },
+    ],
+    location: "New York, NY",
+    position: "Fullstack Engineer",
+    points: [
+      "Closely worked with the design systems team to develop reusable React UI components.",
+      "Implemented A/B experiments to improve end-to-end patient payment flow.",
+    ],
+    workedLength: getDateEmployed(
+      new Date("2021-07-01"),
+      new Date("2022-07-02")
+    ),
+  },
+  {
     companyName: "Suki AI",
     companyURL: "https://www.suki.ai/",
     skills: [
@@ -107,7 +134,10 @@ const resume = [
       "Design, architect, code, and implement components & UI with React.js",
       "Partner with designers and product managers to provide a best-in-class doctor experience",
     ],
-    workedLength: getDateEmployed(new Date("2020-01-02"), null),
+    workedLength: getDateEmployed(
+      new Date("2020-01-02"),
+      new Date("2021-07-02")
+    ),
   },
   {
     companyName: "Education Elements",
