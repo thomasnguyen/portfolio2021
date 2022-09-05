@@ -39,10 +39,17 @@ const HeroContainer = styled.div`
     line-height: 1.5;
   }
 
+  .hero-right {
+    width: 33%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
   .hero-image {
     margin-right: -100px;
     filter: sharp(2);
-
+    width: 100%;
     @media (max-width: 768px) {
       margin-right: 0px;
       width: 100%;
@@ -99,7 +106,7 @@ export default function Hero() {
           next level.
         </p>
       </div>
-      <div>
+      <div className="hero-right">
         <img className="hero-image" src="/hero.png" />
       </div>
     </HeroContainer>
